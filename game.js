@@ -3,6 +3,9 @@
     return Math.floor(Math.random() * maxRoll); 
   }
 
+function restartGame() {
+  location.reload();
+}
 
   function chooseYourOwnAdventureGame() {
 
@@ -76,12 +79,9 @@
               "background-image", "url('img/skull-death.jpg')"    
             );
 
-            $("#game-display").append("<button class='btn btn-restart'>Restart your most excellent adventure</button>");
-
-            $(".btn-restart").on("click", function() {
-              location.reload();
-            }
-          );  
+            setTimeout(function() {
+              $("#game-display").append("<button onclick='restartGame()' class='btn btn-restart'>Restart your most excellent adventure</button>");
+            }, 2000);  
         }
       });
   
