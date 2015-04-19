@@ -80,8 +80,10 @@ Any questions send me an email: daniel.albert.jeffery@gmail.com
   
   written by Daniel Jeffery
 
+I think we can find what do setTimeout(). And why it not working with buttons in our case.
 
-
+In standard program execution, we execute every line in order folowing writing.
+when the programm reach  setTimeout("something") function setTimeout, set return to function "something" after define time, and continue with folowing line.
 
 
             $("#game-display").append("<button class='btn btn-restart'>Restart your most excellent adventure</button>");
@@ -94,4 +96,4 @@ Any questions send me an email: daniel.albert.jeffery@gmail.com
 
             setTimeout(function() {
               $("#game-display").append("<button onclick='restartGame()' class='btn btn-restart'>Restart your most excellent adventure</button>");
-            }, 2000);  
+            }, 2000);
