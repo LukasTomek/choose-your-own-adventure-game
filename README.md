@@ -78,7 +78,20 @@ If we do decide to keep working on the game, a few things that might make sense 
 
 Any questions send me an email: daniel.albert.jeffery@gmail.com
   
-  
-  
-  
   written by Daniel Jeffery
+
+
+
+
+
+            $("#game-display").append("<button class='btn btn-restart'>Restart your most excellent adventure</button>");
+
+            $(".btn-restart").on("click", function() {
+              location.reload();
+            }
+          );
+
+
+            setTimeout(function() {
+              $("#game-display").append("<button onclick='restartGame()' class='btn btn-restart'>Restart your most excellent adventure</button>");
+            }, 2000);  
